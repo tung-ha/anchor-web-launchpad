@@ -19,25 +19,35 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="mx-auto max-w-6xl px-5 py-20 md:py-24">
-      <p className="text-sm font-semibold tracking-wide text-brand-strong uppercase">
-        How it works
-      </p>
-      <h2 className="mt-3 max-w-2xl text-3xl font-bold text-primary md:text-4xl">
-        Four simple steps, start to finish
-      </h2>
+    <section
+      id="process"
+      className="relative overflow-hidden bg-primary py-24 text-primary-foreground md:py-32"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-40 -left-32 size-[30rem] rounded-full bg-brand/10 blur-3xl"
+      />
+      <div className="relative mx-auto max-w-6xl px-5">
+        <p className="text-sm font-semibold tracking-wide text-brand uppercase">How it works</p>
+        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold md:text-5xl">
+          Four simple steps, start to finish
+        </h2>
 
-      <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {steps.map((step, index) => (
-          <li key={step.title} className="relative rounded-2xl border border-border bg-card p-7">
-            <span className="font-display text-4xl font-extrabold text-brand/35">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <h3 className="mt-3 text-lg font-semibold text-primary">{step.title}</h3>
-            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
-          </li>
-        ))}
-      </ol>
+        <ol className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {steps.map((step, index) => (
+            <li
+              key={step.title}
+              className="rounded-3xl border border-primary-foreground/15 bg-primary-foreground/5 p-8 transition-colors duration-300 hover:border-brand/50 hover:bg-primary-foreground/10"
+            >
+              <span className="font-display text-5xl font-extrabold text-brand/60">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mt-4 font-display text-xl font-bold">{step.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/75">{step.body}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
     </section>
   );
 }

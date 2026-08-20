@@ -26,27 +26,31 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-secondary/60 py-20 md:py-24">
+    <section id="services" className="border-y border-border bg-secondary/70 py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-5">
         <p className="text-sm font-semibold tracking-wide text-brand-strong uppercase">Services</p>
-        <h2 className="mt-3 max-w-2xl text-3xl font-bold text-primary md:text-4xl">
+        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold text-primary md:text-5xl">
           Straightforward work, clearly explained
         </h2>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-2xl border border-border bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-lift"
+              className="group flex gap-5 rounded-3xl border border-border bg-card p-8 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-brand/50 hover:shadow-lift"
             >
-              <service.icon className="size-6 text-brand-strong" />
-              <h3 className="mt-5 text-lg font-semibold text-primary">{service.title}</h3>
-              <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{service.body}</p>
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary text-brand transition-colors duration-300 group-hover:bg-brand group-hover:text-primary">
+                <service.icon className="size-6" strokeWidth={2} />
+              </span>
+              <div>
+                <h3 className="font-display text-xl font-bold text-primary">{service.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{service.body}</p>
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-12 flex flex-wrap items-center gap-4">
           <Button variant="brand" size="xl" asChild>
             <a href="#contact">
               Get a Free Quote <ArrowRight className="size-4" />
