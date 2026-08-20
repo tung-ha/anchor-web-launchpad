@@ -65,13 +65,14 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --shadow-soft: 0 12px 32px -18px oklch(0.256 0.062 251 / 0.45);
-  --shadow-lift: 0 20px 48px -24px oklch(0.256 0.062 251 / 0.5);
+  --shadow-soft: 0 10px 30px -18px oklch(0.256 0.062 251 / 0.35);
+  --shadow-lift: 0 26px 60px -28px oklch(0.256 0.062 251 / 0.55);
+  --shadow-card: 0 1px 2px oklch(0.256 0.062 251 / 0.06), 0 14px 36px -22px oklch(0.256 0.062 251 / 0.4);
 }
 
 :root {
   --radius: 0.875rem;
-  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   /* off-white #F8F9FA */
@@ -177,7 +178,7 @@
   h3,
   h4 {
     font-family: var(--font-heading);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
   }
 
   section[id] {
