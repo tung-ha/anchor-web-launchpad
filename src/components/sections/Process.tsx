@@ -1,0 +1,43 @@
+const steps = [
+  {
+    title: "Chat",
+    body: "A quick, no-pressure conversation about your business and what you need. I'll send back a fixed price.",
+  },
+  {
+    title: "Design",
+    body: "I put together a layout and copy based on our chat. You see it early and tell me what to change.",
+  },
+  {
+    title: "Build",
+    body: "I build the site, make sure it's quick on phones, and set up your contact details and Google listing.",
+  },
+  {
+    title: "Launch",
+    body: "Your site goes live, you get a short walkthrough, and I'm still here whenever something needs updating.",
+  },
+];
+
+export function Process() {
+  return (
+    <section id="process" className="mx-auto max-w-6xl px-5 py-20 md:py-24">
+      <p className="text-sm font-semibold tracking-wide text-brand-strong uppercase">
+        How it works
+      </p>
+      <h2 className="mt-3 max-w-2xl text-3xl font-bold text-primary md:text-4xl">
+        Four simple steps, start to finish
+      </h2>
+
+      <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {steps.map((step, index) => (
+          <li key={step.title} className="relative rounded-2xl border border-border bg-card p-7">
+            <span className="font-display text-4xl font-extrabold text-brand/35">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <h3 className="mt-3 text-lg font-semibold text-primary">{step.title}</h3>
+            <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
