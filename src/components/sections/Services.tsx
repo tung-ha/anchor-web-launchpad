@@ -28,7 +28,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-primary py-24 text-primary-foreground md:py-32"
+      className="relative overflow-hidden bg-background py-24 text-primary md:py-32"
     >
       <div
         aria-hidden
@@ -36,22 +36,22 @@ export function Services() {
       />
       <div className="relative mx-auto max-w-6xl px-5">
         <p className="text-sm font-semibold tracking-wide text-brand uppercase">Services</p>
-        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold md:text-5xl">
+        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold text-primary md:text-5xl">
           Straightforward work, clearly explained
         </h2>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-3xl bg-primary-foreground/15 md:grid-cols-2">
+        <div className="mt-14 grid gap-px overflow-hidden rounded-3xl border border-primary/10 bg-primary/10 shadow-card md:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group flex gap-5 bg-primary p-8 transition-colors duration-300 hover:bg-primary-foreground/[0.07]"
+              className="group flex gap-5 bg-card p-8 transition-colors duration-300 hover:bg-brand/5"
             >
               <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30 transition-colors duration-300 group-hover:bg-brand group-hover:text-primary">
                 <service.icon className="size-6" strokeWidth={2} />
               </span>
               <div>
-                <h3 className="font-display text-xl font-bold">{service.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-primary-foreground/75">
+                <h3 className="font-display text-xl font-bold text-primary">{service.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {service.body}
                 </p>
               </div>
@@ -65,7 +65,7 @@ export function Services() {
               Get a Free Quote <ArrowRight className="size-4" />
             </a>
           </Button>
-          <p className="text-sm text-primary-foreground/70">
+          <p className="text-sm text-muted-foreground">
             Every quote is fixed price and sent through before any work begins.
           </p>
         </div>
