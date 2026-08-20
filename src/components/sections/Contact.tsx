@@ -43,11 +43,11 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-primary py-20 text-primary-foreground md:py-24">
+    <section id="contact" className="bg-primary py-24 text-primary-foreground md:py-32">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <p className="text-sm font-semibold tracking-wide text-brand uppercase">Contact</p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+          <h2 className="mt-3 font-display text-4xl leading-[1.05] font-extrabold md:text-5xl">
             Let's get your business online properly
           </h2>
           <p className="mt-5 text-base leading-relaxed text-primary-foreground/80">
