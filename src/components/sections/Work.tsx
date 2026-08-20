@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import featuredWork from "@/assets/featured-work.jpg";
+import vilaconic from "@/assets/work-vilaconic.jpg";
 
 /**
  * Featured project. Add more entries to this array as you complete projects —
@@ -8,13 +8,13 @@ import featuredWork from "@/assets/featured-work.jpg";
  */
 const projects = [
   {
-    client: "Placeholder Client",
-    industry: "Cafe · Adelaide",
-    title: "A simple site that turns locals into regulars",
-    body: "A one-page site with menu, opening hours, location and a click-to-call button — built so customers can find what they need in a couple of taps on their phone.",
-    tags: ["One-page build", "Mobile-first", "Google Business setup"],
-    image: featuredWork,
-    url: "#contact",
+    client: "Vilaconic",
+    industry: "Wholesale food importer · Adelaide",
+    title: "A full brand and website built from a blank page",
+    body: "Vilaconic imports Vietnamese and South-East Asian food for Australian restaurants, grocers and distributors. They came to me without a brief, a scope or any tech know-how — just a business and a need to be taken seriously online. I handled everything: structure, copy direction, photography treatment, bilingual Vietnamese/English content and the build, then handed back a site they can send to buyers with confidence.",
+    tags: ["Full site build", "Bilingual VI/EN", "Product catalogue", "Enquiry funnel"],
+    image: vilaconic,
+    url: "https://vilaconic.vercel.app/",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Work() {
                 width={1280}
                 height={960}
                 loading="lazy"
-                className="h-64 w-full object-cover lg:h-full"
+                className="h-64 w-full object-cover object-top lg:h-full"
               />
               <div className="p-8 md:p-10">
                 <p className="text-xs font-semibold tracking-wide text-brand-strong uppercase">
@@ -60,8 +60,8 @@ export function Work() {
                   ))}
                 </ul>
                 <Button variant="outline" size="lg" className="mt-8 rounded-xl" asChild>
-                  <a href={project.url}>
-                    View project <ArrowUpRight className="size-4" />
+                  <a href={project.url} target="_blank" rel="noreferrer">
+                    Visit the live site <ArrowUpRight className="size-4" />
                   </a>
                 </Button>
               </div>
