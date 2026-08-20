@@ -2,8 +2,8 @@ import { Anchor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
 
-const abstractImage =
-  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80";
+const aboutImage =
+  "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1600&q=80";
 
 export function About() {
   return (
@@ -50,8 +50,8 @@ export function About() {
 
         <div className="mt-10 overflow-hidden rounded-[2rem] shadow-lift">
           <img
-            src={abstractImage}
-            alt="Abstract navy and teal light trails suggesting momentum and craft"
+            src={aboutImage}
+            alt="A clean, well-lit workspace with a laptop and a small plant — the kind of place where your site gets built"
             width={1600}
             height={600}
             loading="lazy"

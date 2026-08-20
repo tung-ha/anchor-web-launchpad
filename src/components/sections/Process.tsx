@@ -21,7 +21,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-primary py-24 text-primary-foreground md:py-32"
+      className="relative overflow-hidden bg-background py-24 text-primary md:py-32"
     >
       <div
         aria-hidden
@@ -29,7 +29,7 @@ export function Process() {
       />
       <div className="relative mx-auto max-w-6xl px-5">
         <p className="text-sm font-semibold tracking-wide text-brand uppercase">How it works</p>
-        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold md:text-5xl">
+        <h2 className="mt-3 max-w-2xl font-display text-4xl leading-[1.05] font-extrabold text-primary md:text-5xl">
           Four simple steps, start to finish
         </h2>
 
@@ -37,13 +37,13 @@ export function Process() {
           {steps.map((step, index) => (
             <li
               key={step.title}
-              className="rounded-3xl border border-primary-foreground/15 bg-primary-foreground/5 p-8 transition-colors duration-300 hover:border-brand/50 hover:bg-primary-foreground/10"
+              className="rounded-3xl border border-primary/10 bg-white p-8 shadow-card transition-colors duration-300 hover:border-brand/50"
             >
               <span className="font-display text-5xl font-extrabold text-brand/60">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-4 font-display text-xl font-bold">{step.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/75">{step.body}</p>
+              <h3 className="mt-4 font-display text-xl font-bold text-primary">{step.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
             </li>
           ))}
         </ol>
