@@ -1,6 +1,13 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import vilaconic from "@/assets/work-vilaconic.jpg";
+
+const testimonial = {
+  quote:
+    "Without any brief, scope, or technology knowledge – we simply handed our business over and let the process happen. This trust was rewarded well. The website has managed to capture everything that is us, has the ability to function in both English and Vietnamese languages for our clients, and provides us with something we can be proud to show new clients. It is unusual to come across somebody who can convert an unclear concept into something like this without our continuous guidance.",
+  name: "Vilaconic",
+  role: "Adelaide",
+};
 
 /**
  * Featured project. Add more entries to this array as you complete projects —
