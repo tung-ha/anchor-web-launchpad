@@ -1,4 +1,4 @@
-import { Store, Zap, Receipt, LifeBuoy } from "lucide-react";
+import { Store, Zap, Receipt, LifeBuoy, Users } from "lucide-react";
 
 const values = [
   {
