@@ -54,7 +54,18 @@ export function Why() {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{value.body}</p>
           </div>
         ))}
+
+        <div className="flex items-start gap-5 rounded-3xl bg-primary p-8 text-primary-foreground shadow-lift sm:col-span-2">
+          <span className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-brand/15 text-brand ring-1 ring-brand/30">
+            <Users className="size-7" strokeWidth={2} />
+          </span>
+          <p className="text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+            One point of contact, real capacity behind it — I bring in trusted developers and
+            designers when a project calls for it, so nothing gets bottlenecked.
+          </p>
+        </div>
       </div>
     </section>
   );
 }
+
