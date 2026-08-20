@@ -59,7 +59,7 @@ function Index() {
         <Services />
         <Process />
         <Work />
-        <Testimonial />
+
         <About />
         <Contact />
       </main>
