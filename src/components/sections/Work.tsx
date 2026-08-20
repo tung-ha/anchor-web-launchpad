@@ -23,10 +23,10 @@ export function Work() {
     <section id="work" className="bg-secondary/60 py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-5">
         <p className="text-sm font-semibold tracking-wide text-brand-strong uppercase">
-          Featured work
+          Featured project
         </p>
         <h2 className="mt-3 max-w-2xl text-3xl font-bold text-primary md:text-4xl">
-          Recent projects
+          A project I'm proud of.
         </h2>
 
         <div className="mt-12 grid gap-8">
