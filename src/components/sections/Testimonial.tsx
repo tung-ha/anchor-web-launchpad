@@ -1,11 +1,10 @@
 import { Quote } from "lucide-react";
 
-/** Swap this placeholder for a real quote when you have one. */
 const testimonial = {
   quote:
-    "I'd been putting off getting a website for two years because it felt like a huge job. It took one phone call and about a week — and I had three new enquiries in the first fortnight.",
-  name: "Placeholder Name",
-  role: "Owner, Placeholder Business — Adelaide",
+    "Without any brief, scope, or technology knowledge – we simply handed our business over and let the process happen. This trust was rewarded well. The website has managed to capture everything that is us, has the ability to function in both English and Vietnamese languages for our clients, and provides us with something we can be proud to show new clients. It is unusual to come across somebody who can convert an unclear concept into something like this without our continuous guidance.",
+  name: "Vilaconic",
+  role: "Adelaide",
 };
 
 export function Testimonial() {
