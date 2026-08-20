@@ -70,11 +70,27 @@ export function Work() {
                   </li>
                 ))}
               </ul>
+
+              <figure className="mt-9 rounded-3xl border border-border bg-card p-7 shadow-card">
+                <Quote className="size-8 text-brand" />
+                <blockquote className="mt-4 text-base leading-relaxed text-secondary-foreground">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-5 text-sm text-muted-foreground">
+                  <span className="font-semibold text-secondary-foreground">
+                    {testimonial.name}
+                  </span>
+                  <br />
+                  {testimonial.role}
+                </figcaption>
+              </figure>
+
               <Button variant="brand" size="xl" className="mt-9" asChild>
                 <a href={project.url} target="_blank" rel="noreferrer">
                   Visit the live site <ArrowUpRight className="size-4" />
                 </a>
               </Button>
+
             </div>
           </article>
         ))}
